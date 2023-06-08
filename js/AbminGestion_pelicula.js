@@ -16,6 +16,20 @@ const numCopiasInput = document.getElementById("numCopias");
 const productoraInput = document.getElementById("productora");
 
 // Agregar un género nuevo al combo de géneros
+function agregarGenero() {
+    var nuevoGenero = document.getElementById("nuevoGenero").value; // Obtener el valor del nuevo género ingresado
+  
+    if (nuevoGenero !== "") { // Verificar si se ingresó un nuevo género
+      var generoSelect = document.getElementById("genero"); // Obtener el elemento del select de género
+      var option = document.createElement("option"); // Crear un nuevo elemento de opción
+      option.value = nuevoGenero; // Establecer el valor del nuevo género
+      option.text = nuevoGenero; // Establecer el texto del nuevo género
+  
+      generoSelect.add(option); // Agregar el nuevo género al select de género
+      document.getElementById("nuevoGenero").value = ""; // Limpiar el campo de texto del nuevo género
+    }
+  }
+  
 
 // Agregar subtítulos a la lista
 function agregarSubtitulos() {
