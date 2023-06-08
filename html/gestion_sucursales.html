@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Sucursal</title>
+    <link rel="stylesheet" href="../css/gestion_sucursal.css">
+</head>
+
+<body>
+    <div class="divMega">
+        <div class="contenedorPadre">
+            <h2>Formulario de Sucursal</h2>
+
+            <form id="sucursalForm" onsubmit="return validarDireccion()">
+
+                <div class="A">
+                    <label for="codigo">Código:</label>
+                    <input type="text" id="codigo" required>
+                </div>
+
+                <div class="A">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" required>
+                </div>
+
+                <div class="A">
+                    <label for="departamento">Departamento:</label>
+                    <select id="departamento">
+                        <option value="">Selecciona un departamento</option>
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Antioquia">Antioquia</option>
+                        <option value="Arauca">Arauca</option>
+                        <option value="Atlántico">Atlántico</option>
+                        <option value="Bogotá_D_C">Bogotá D.C.</option>
+                        <option value="Bolívar">Bolívar</option>
+                        <option value="Boyacá">Boyacá</option>
+                        <option value="Caldas">Caldas</option>
+                        <option value="Caquetá">Caquetá</option>
+                        <option value="Casanare">Casanare</option>
+                        <option value="Cauca">Cauca</option>
+                        <option value="Cesar">Cesar</option>
+                        <option value="Chocó">Chocó</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Cundinamarca">Cundinamarca</option>
+                        <option value="Guainía">Guainía</option>
+                        <option value="Guaviare">Guaviare</option>
+                        <option value="Huila">Huila</option>
+                        <option value="LaGuajira">La Guajira</option>
+                        <option value="Magdalena">Magdalena</option>
+                        <option value="Meta">Meta</option>
+                        <option value="Nariño">Nariño</option>
+                        <option value="NortedeSantander">Norte de Santander</option>
+                        <option value="Putumayo">Putumayo</option>
+                        <option value="Quindío">Quindío</option>
+                        <option value="Risaralda">Risaralda</option>
+                        <option value="SanAndrésyProvidencia">San Andrés y Providencia</option>
+                        <option value="Santander">Santander</option>
+                        <option value="Sucre">Sucre</option>
+                        <option value="Tolima">Tolima</option>
+                        <option value="ValleCauca">Valle del Cauca</option>
+                        <option value="Vaupés">Vaupés</option>
+
+                    </select>
+                </div>
+
+                <div class="A">
+                    <label for="ciudad">Ciudad:</label>
+                    <select id="ciudad" disabled>
+                        <option value="">Selecciona una ciudad</option>
+                    </select>
+                </div>
+
+                <div class="A">
+                    <label for="gerente">Gerente:</label>
+                    <input type="text" id="gerente" required>
+                </div>
+                <div class="A">
+                    <label for="salas">Número de salas:</label>
+                    <input type="number" id="salas" max="20" min="1" required>
+                </div>
+                <div class="A">
+                    <label for="trabajadores">Número de trabajadores:</label>
+                    <input type="number" id="trabajadores" max="20" min="1" required>
+                </div>
+
+                <div class="A">
+                    <label for="cafeteria">Posee cafetería:</label>
+                    <input type="checkbox" id="cafeteria">
+                </div>
+                <div class="A">
+                    <button type="submit" id="guardar">Guardar</button>
+                </div>
+                <button id="consultar">Consultar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/gerente_sucursal.js"></script>
+</body>
+
+</html>

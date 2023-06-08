@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productoras</title>
+    <script src="../js/gestion_productoras.js"></script>
+    <link rel="stylesheet" href="../css/gestion_productora.css">
+</head>
+
+<body>
+   <div class="divMega">
+    <div class="contenedorPadre">
+        <h1>Gestión de Productoras</h1>
+
+        <form id="productoraForm">
+            <div class="A"> <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+            </div>
+    <div class="A">
+        <label for="pais">País:</label>
+        <input type="text" id="pais" required><br>
+    </div>
+    <div class="A">
+       <div> <label for="telefonos">Teléfonos:</label></div>
+      <div>  <ul id="telefonosList">
+        <li><input type="text" class="telefono"  pattern="[0-9]+" required></li>
+    </ul></div>
+       <div> <button type="button" onclick="agregarTelefono()">Agregar teléfono</button></div>
+    </div>
+    <div class="A">
+       <div> <label for="celulares">Celulares:</label></div>
+       <div> <ul id="celularesList">
+        <li><input type="text" class="celular"  pattern="[0-9]+" required ></li>
+    </ul></div>
+       <div> <button type="button" onclick="agregarCelular()">Agregar celular</button></div>
+    </div>
+    <div class="A">  <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" required><br>
+    </div>
+    <div class="A">
+        <label for="representante">Representante:</label>
+        <input type="text" id="representante" required><br>
+    </div>
+    <div class="A">
+        <button type="button" onclick="guardarProductora(event)">Guardar</button>
+    </div> 
+        </form>
+    </div>
+   </div>
+
+    <h2>Listado de Productoras</h2>
+    <table id="productorasTable">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>País</th>
+                <th>Teléfonos</th>
+                <th>Celulares</th>
+                <th>Correo electrónico</th>
+                <th>Representante</th>
+            </tr>
+        </thead>
+        <tbody id="productorasTableBody">
+        </tbody>
+    </table>
+
+</body>
+
+</html>

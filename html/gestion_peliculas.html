@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gestion de peliculas</title>
+    <link rel="stylesheet" href="../css/gestion_pelicula.css">
+</head>
+
+<body>
+    <h1>Gestión de Películas</h1>
+    <div id="formularioPelicula">
+        <div class="contenedor">
+            <label for="codigo">Código:</label>
+            <input type="text" id="codigo" required>
+        </div>
+
+        <div class="contenedor">
+            <label for="nombreOriginal">Nombre Original:</label>
+            <input type="text" id="nombreOriginal" required>
+        </div>
+
+        <div class="contenedor">
+            <label for="genero">Género:</label>
+            <select id="genero" required>
+                <option value="">Seleccione un género</option>
+                <option value="">comedia</option>
+                <option value="">romanse</option>
+                <option value="">acción</option>
+                <option value="">anime</option>
+            </select>
+            <input type="text" id="nuevoGenero" placeholder="Nuevo Género">
+            <button onclick="agregarGenero()">Agregar</button>
+        </div>
+
+        <div class="contenedor">
+            <label for="idiomaOriginal">Idioma Original:</label>
+            <input type="text" id="idiomaOriginal" required>
+        </div>
+
+        <div class="contenedor">
+            <label for="subtitulosDisponibles">Subtítulos Disponibles:</label>
+            <input type="text" id="subtitulosInput" placeholder="Ingrese los subtítulos separados por comas">
+            <button onclick="agregarSubtitulos()">Agregar</button>
+        </div>
+        <ul id="listaSubtitulos"></ul>
+
+        <div class="contenedor">
+            <label for="duracion">Duración:</label>
+            <span id="duracion" ></span>
+        </div>
+
+        <div class="contenedor">
+            <label for="actoresPrincipales">Actores Principales:</label>
+            <input type="text" id="actorPrincipal">
+            <button onclick="agregarActorPrincipal()">Agregar</button>
+            <ul id="listaActoresPrincipales"></ul>
+        </div>
+
+        <div class="contenedor">
+            <label for="actoresSecundarios">Actores Secundarios:</label>
+            <input type="text" id="actorSecundario">
+            <button onclick="agregarActorSecundario()">Agregar</button>
+            <ul id="listaActoresSecundarios"></ul>
+        </div>
+
+        <div class="contenedor">
+            <label for="numAfiches">Número de Afiches Disponibles:</label>
+            <input type="number" id="numAfiches" min="0" required>
+        </div>
+        <div class="contenedor">
+            <label for="numCopias">Número de Copias:</label>
+            <input type="number" id="numCopias" min="0" required>
+        </div>
+
+        <div class="contenedor">
+            <label for="productora">Productora:</label>
+            <input type="text" id="productora" required>
+        </div>
+
+        <button onclick="guardarPelicula()">guardar</button>
+    </div>
+    <button type="button" id="consultar">consultar</button>
+    <script src="../js/AbminGestion_pelicula.js"></script>
+</body>
+</html>
+
+

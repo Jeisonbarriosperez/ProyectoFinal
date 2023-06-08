@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #16222a, #3a6073);
+}
+.contenedor {
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 500px;
+    border-radius: 1cm;
+}
+.contenedor ul {
+    list-style-type: none;
+    padding: 0;
+}
+.contenedor li {
+    margin-bottom: 10px;
+}
+.contenedor a {
+    text-decoration: none;
+    color: #1eb9c4;
+    font-size: 30px;
+}
+.contenedor a:hover {
+    color: #000;
+}
+h1{
+    font-size: 40px;
+}

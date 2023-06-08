@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de ventas de tiquetes</title>
+    <link rel="stylesheet" href="../css/gestion_tiquetes.css">
+</head>
+<body>
+    <h1>Gestión de ventas de tiquetes</h1>
+
+   <div class="divMega">
+    <div class="contenedorPadre">
+        <form id="ventaForm">
+            <div class="A">
+                <label for="cliente">Cliente:</label>
+                <input type="text" id="cliente" required>
+            </div>
+            <div class="A">
+                <label for="sala">Sala:</label>
+            <input type="number" id="sala" min="1" max="10" required>
+            </div>
+            <div class="A">
+                <label for="horario">Horario:</label>
+                <select id="horario" required>
+                    <option value="07:00 AM">07:00 AM</option>
+                    <option value="07:30 AM">07:30 AM</option>
+                    <option value="08:00 AM">08:00 AM</option>
+                    <option value="08:30 AM">08:30 AM</option>
+                    <option value="09:00 AM">09:00 AM</option>
+                    <option value="09:30 AM">09:30 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="10:30 AM">10:30 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="11:30 AM">11:30 AM</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="12:30 PM">12:30 PM</option>
+                    <option value="01:00 PM">01:00 PM</option>
+                    <option value="01:30 PM">01:30 PM</option>
+                    <option value="02:00 PM">02:00 PM</option>
+                    <option value="02:30 PM">02:30 PM</option>
+                    <option value="03:00 PM">03:00 PM</option>
+                    <option value="03:30 PM">03:30 PM</option>
+                    <option value="04:00 PM">04:00 PM</option>
+                    <option value="04:30 PM">04:30 PM</option>
+                    <option value="05:00 PM">05:00 PM</option>
+                    <option value="05:30 PM">05:30 PM</option>
+                    <option value="06:00 PM">06:00 PM</option>
+                    <option value="06:30 PM">06:30 PM</option>
+                    <option value="07:00 PM">07:00 PM</option>
+                    <option value="07:30 PM">07:30 PM</option>
+                    <option value="08:00 PM">08:00 PM</option>
+                    <option value="08:30 PM">08:30 PM</option>
+                    <option value="09:00 PM">09:00 PM</option>
+                    <option value="09:30 PM">09:30 PM</option>
+                    <option value="10:00 PM">10:00 PM</option>
+                    
+                </select>
+            </div>
+            <div class="A">
+            <label for="numeroTiquetes">Número de tiquetes:</label>
+            <input type="number" id="numeroTiquetes" min="1" max="50" required>
+            </div>
+            <div class="A">
+                <label for="formaPago">Forma de pago en línea:</label>
+                <input type="checkbox" id="formaPago" required>
+            </div>
+            <div class="A">
+                <label for="tarjeta">Tarjeta de pago:</label>
+                <select id="tarjeta" required>
+                    <option value="Visa">Visa</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="American Express">American Express</option>
+                  </select>
+            </div>
+            <div class="A">
+                <label for="fechaCreacion">Fecha de creación:</label>
+            <input type="text" id="fechaCreacion" disabled>
+            </div>
+            <div class="A">
+                <label for="fechaModificacion">Fecha de modificación:</label>
+                <input type="text" id="fechaModificacion" disabled>
+            </div>
+            <div class="A">
+                <button type="submit">Guardar</button>
+            </div>              
+        </form>
+        <button id="consultarBtn" type="button">Consultar</button>
+    </div>
+   </div>
+    <script src="../js/gestion_tiquetes.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Análisis de frecuencia por género de película</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Incluir la biblioteca Chart.js -->
+</head>
+
+<body>
+    <div>
+        <label for="periodicidad">Periodicidad:</label>
+        <select id="periodicidad">
+            <option value="semanal" selected>Semanal</option>
+            <option value="quincenal">Quincenal</option>
+            <option value="semestral">Semestral</option>
+        </select>
+        <button onclick="generarGrafica()">Consultar</button>
+    </div>
+    <canvas id="chart"></canvas> <!-- aqui mostraremos la grafica de la contabilidad de cinefilos de corazon-->
+    <script src="../js/analisisFrecuencia.js"></script>
+</body>
+
+</html>

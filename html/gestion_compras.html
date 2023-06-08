@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Compra</title>
+    <script src="../js/gestion_compras.js"></script>
+    <link rel="stylesheet" href="../css/gestion_compra.css">
+</head>
+
+<body>
+    <div class="divMega">
+        <div class="contenedorPadre">
+            <h1>Gestion de compras</h1>
+            <form id="compraForm" onsubmit="validarCompra(event)">
+                <div class="A">
+                    <label for="numero">Número:</label>
+                    <input type="number" id="numero" min="1" required>
+                </div>
+
+                <div class="A">
+                    <label for="sucursal">Sucursal:</label>
+                    <input type="text" id="sucursal" required>
+                </div>
+                <div class="A">
+                    <div>
+                        <label for="peliculas">Películas:</label>
+                    </div>
+                    <div>
+                        <ul id="peliculasList">
+                            <li><input type="text" class="pelicula" required></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button type="button" onclick="agregarPelicula()">Agregar película</button>
+                    </div>
+                </div>
+                <div class="A">
+                    <label for="cantidades">Cantidad:</label>
+                    <input type="number" id="cantidades" required>
+                </div>
+                <div class="A">
+                    <label for="precio">Precio:</label>
+                <input type="number" id="precio" min="1000">
+                </div>
+                <div class="A">
+                    <label for="subtotal">Subtotal:</label>
+                    <input type="number" id="subtotal" disabled>
+                </div>
+                <div class="A">
+                    <label for="total">Total:</label>
+                    <input type="number" id="total" disabled>
+                </div>
+                <div class="A">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" required>
+                </div>
+                <div class="A">
+                    <input type="submit" value="Guardar">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

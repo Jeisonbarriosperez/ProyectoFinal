@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Cliente</title>
+    <link rel="stylesheet" href="../css/gestion_cliente.css">
+</head>
+
+<body>
+    <div class="divMega">
+        <div class="contenedorPadre">
+            <h1>Gestión de clientes</h1>
+            <form id="formularioCliente" onsubmit="return validarDireccion()">
+                <div class="A">
+                    <label for="id">ID:</label>
+                    <input type="text" id="id" pattern="[0-9]+" required>
+                </div>
+                <div class="A">
+                    <label for="nombreCompleto">Nombres completos:</label>
+                    <input type="text" id="nombreCompleto" required>
+                </div>
+                <div class="A">
+                    <label for="correoElectronico">Correo electrónico:</label>
+                    <input type="email" id="correoElectronico" required>
+                </div>
+                <div class="A">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" pattern="[0-9]{10}" required>
+                </div>
+                <div class="A">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" placeholder="calle, carrera, manzana, barrio " required>
+                    <br>
+                </div>
+                <div class="A">
+                    <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                    <input type="date" id="fechaNacimiento" required><br>
+                </div>
+                <div class="A">
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexo" required>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select><br>
+                </div>
+                <div class="A">
+                    <div><label for="redesSociales">Redes sociales:</label></div>
+                    <div> <input type="text" id="redSocial"></div>
+                    <div> <button type="button" onclick="agregarRedSocial()">Agregar</button></div>
+                    <div>
+                        <ul id="listaRedesSociales"></ul>
+                    </div>
+                </div>
+                <div class="A">
+                    <input id="X" type="submit" id="btnGuardar" value="Guardar">
+                </div>
+            </form>
+
+            <button type="button" onclick="consultarCliente()">Consultar</button>
+        </div>
+    </div>
+
+    <script src="../js/gestion_cliente.js"></script>
+</body>
+
+</html>

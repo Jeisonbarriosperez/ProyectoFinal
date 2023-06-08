@@ -1,0 +1,43 @@
+.contenedor {
+    margin-bottom: 10px;
+}
+body{
+background: linear-gradient(to right, #5a7483, #343a5f);
+}
+button {
+    margin-top: 10px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-type: lower-latin;
+    /* Establecer el tipo de viñeta */
+    margin-bottom: 5px;
+    /* Espacio entre los elementos de la lista */
+}
+input,
+select {
+    padding: 5px;
+    margin-top: 2px;
+    border-radius: 1cm;
+    height: 26px;
+    width: 20%;
+    text-align: center;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 75%;
+}
+button{
+    border-radius: 1cm;
+    font-weight: bold;
+    width: 101px;
+    height: 30px;
+}
+

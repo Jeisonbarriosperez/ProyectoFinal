@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartelera cliente</title>
+</head>
+<style>
+  body{
+    background: linear-gradient(to right, #25516e, #3a6073);
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  form {
+    margin-top: 20px;
+  }
+  input[type="submit"] {
+    padding: 10px 20px;
+  }
+</style>
+<body>
+  <h1>Consulta de Cartelera</h1>
+  <table id="cartelera">
+    <tr>
+      <th>Sala</th>
+      <th>Horario</th>
+      <th>Película</th>
+      <th>Fecha de Inicio</th>
+      <th>Fecha de Finalización</th>
+      <th></th>
+    </tr>
+  </table>
+
+  <h2>Selección de Película (Cliente)</h2>
+  <table id="peliculaSeleccionada">
+    <tr>
+      <th>Sala</th>
+      <th>Horario</th>
+      <th>Película</th>
+      <th>Fecha de Inicio</th>
+      <th>Fecha de Finalización</th>
+    </tr>
+  </table>
+
+  <script src="../js/gestion_cartC.js"></script>
+</body>
+</html>
+
+

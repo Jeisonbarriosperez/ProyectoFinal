@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIAR SESION</title>
+    <script src="./js/sesion.js"></script>
+    <link rel="stylesheet" href="./css/sesion_&_registro.css">
+</head>
+
+<body>
+    <div class="divSuper">
+        <div class="sesion">
+          <form onsubmit="event.preventDefault(); iniciarSesion();">
+            <h1>Iniciar Sesión</h1>
+            <div class="A">
+              <label for="usuario">Usuario</label>
+              <input type="text" id="usuario" placeholder="rol">
+            </div>
+            <div class="A">
+              <label for="clave">Contraseña</label>
+              <input type="password" id="clave" placeholder="123">
+            </div>
+            <div class="A">
+              <input type="submit" value="Iniciar" id="B">
+            </div>
+          </form>
+        </div>
+      </div>
+</body>
+
+</html>

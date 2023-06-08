@@ -1,0 +1,71 @@
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: linear-gradient(to right, #5a7483, #343a5f);
+    }
+
+    .sesion {
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .A {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        width: 300px;
+    }
+
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    select,
+    input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"],
+    button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]#B {
+        margin-top: 10px;
+    }
+    ul {
+        padding-left: 0;
+    }
+    
+    li {
+        list-style-type: lower-latin;
+        /* Establecer el tipo de viñeta */
+        margin-bottom: 5px;
+        /* Espacio entre los elementos de la lista */
+    }
